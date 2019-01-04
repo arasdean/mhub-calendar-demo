@@ -1,25 +1,30 @@
 {
-  "name": "mhub-calendar",
-  "version": "0.1.0",
+  "name": "cal",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-scripts": "2.1.2"
+    "date-fns": "^1.29.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.3.2",
+    "react-date-picker": "^7.1.1",
+    "react-dom": "^16.3.2",
+    "react-redux": "^6.0.0",
+    "react-scripts": "1.1.4",
+    "react-time-picker": "^3.1.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.8.2"
+  }
 }

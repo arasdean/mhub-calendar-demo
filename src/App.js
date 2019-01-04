@@ -1,26 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Provider } from 'react-redux';
+import "./App.css";
 
-class App extends Component {
+import Calendar from "./components/Calendar";
+import ReminderForm from "./components/ReminderForm";
+import store from './store';
+
+class App extends React.Component {
   render() {
     return (
+      <Provider store={store} > 
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <main>
+          <Calendar />
+          <ReminderForm /> 
+        </main>
       </div>
+      </Provider>
     );
   }
 }
